@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/menubar.js"></script>
+    <title>조이의 학습일지</title>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1>
+                <a href="index.html" id="logobox">
+                    <img src="img/logo.svg" alt="logo" id="logo">
+                </a>
+                <a href="#" id="trigger">
+                    <!-- 트리거 아이콘 -->
+                </a>
+            </h1>
+            <nav>
+                <ul id="gnb"> 
+                    <!-- 메뉴1 -->
+                    <li class="btn">
+                        <a href="#">HTML5</a>
+                        <ul class="depth2">
+                            <li><a href="#">HTML 기본문법</a></li>
+                            <li><a href="#">HTML5 기본문법</a></li>
+                            <li><a href="#">Layout 연습</a></li>
+                        </ul>
+                    </li>
+                    <!-- 메뉴2 -->
+                    <li class="btn">
+                        <a href="#">CSS</a>
+                        <ul class="depth2">
+                            <li><a href="#">Animation</a></li>
+                            <li><a href="#">Transform</a></li>
+                            <li><a href="#">Transition</a></li>
+                            <li><a href="#">Flex & Grid</a></li>
+                        </ul>
+                    </li>
+                    <!-- 메뉴3 -->
+                    <li class="btn">
+                        <a href="#">JavaScript</a>
+                        <ul class="depth2">
+                            <li><a href="#">JavaScript 기본문법</a></li>
+                            <li><a href="#">Browser</a></li>
+                            <li><a href="#">Dom</a></li>
+                        </ul>
+                    </li>
+                    <!-- 메뉴4 -->
+                    <li class="btn">
+                        <a href="#">jQuery</a>
+                        <ul class="depth2">
+                            <li><a href="#">jQuery 기본문법</a></li>
+                            <li><a href="#">Menubar</a></li>
+                        </ul>
+                    </li>
+                    <!-- 메뉴5 -->
+                    <li class="btn">
+                        <a href="#">Layout</a>
+                        <ul class="depth2">
+                            <a href="#" class="long">레이아웃 바로가기
+                                <img src="img/blank.svg" alt="바로가기">
+                            </a>
+                        </ul>
+                    </li>
+                    <!-- 메뉴6 -->
+                    <li class="btn">
+                        <a href="#">Mission!</a>
+                        <ul class="depth2">
+                            <li>
+                                <a href="#">과제 바로가기
+                                    <img src="img/blank.svg" alt="바로가기">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        <!-- 흘러가는 문자 -->
+            <div class="marquee">
+                <div>
+                 <span>
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                 </span>
+                 <span>
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                    &nbsp;&nbsp; Zoey is studying hard now! &nbsp;&nbsp;
+                 </span>
+                </div>
+              </div>
+        </header>
+
+        <section>
+            <div id="video">
+                <video autoplay loop muted width="380px" >
+                    <source src="media/coding.mp4" type="video/mp4">
+                    현재 브라우저에서는 video를 지원하지 않습니다.
+                </video>
+            </div>
+            <div id="txt">
+                <h3>Zoey is <br>
+                    studying hard now!</h3>
+                <p>
+                    <b>UIUX Design</b> | HTML5 | CSS | JavaScript | jQuery
+                </p>
+            </div>
+        </section>
+
+        <article>
+            <div id="subject">
+                <div id="subj0" class="enter">
+                    <!-- 숨겨진 공간 -->
+                </div>
+                <div id="subj1" class="enter">
+                    <h2>CSS3</h2>
+                    <button>보러가기</button>
+                </div>
+                <div id="subj2" class="enter">
+                    <h2>HTML5</h2>
+                    <button>보러가기</button>
+                </div>
+                <div id="subj3" class="enter">
+                    <h2>jQuery</h2>
+                    <button>보러가기</button>
+                </div>
+                <div id="subj4" class="enter">
+                    <h2>JavaScript</h2>
+                    <button>보러가기</button>
+                </div>
+                <div id="subj5" class="enter">
+                    <h2>Layout<br>practice</h2>
+                    <button>보러가기</button>
+                </div>
+                <div id="subj6" class="enter">
+                    <h2>Mission!</h2>
+                    <button>보러가기</button>
+                </div>
+            </div>
+        </article>
+
+        <footer><p>2022 @ design by zoey</p></footer>
+
+    </div>
+
+    <script>
+        document.querySelector('video').playbackRate = 3.0;
+    </script>
+</body>
+</html>
